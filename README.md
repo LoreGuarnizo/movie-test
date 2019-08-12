@@ -3,9 +3,7 @@
 In order to run the application in the development mode take the following steps:
 
 > git clone https://github.com/LoreGuarnizo/eventio.git
-<br>
 > npm install
-<br>
 > npm start
 
 ## Technical Guide
