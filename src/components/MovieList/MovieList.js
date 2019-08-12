@@ -8,7 +8,7 @@ const MovieList = props => {
   return (
   <div className="movie-container">
     {props.movies.map((movie,index) =>
-      (<div className="movie-card">
+      (<div key={index} className="movie-card">
         <img alt='img' key={index} src={`${IMAGE_BASE_URL}${movie.poster_path}`} />
       </div>))
     } 

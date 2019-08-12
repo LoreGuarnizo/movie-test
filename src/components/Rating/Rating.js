@@ -32,6 +32,7 @@ const Rating = ({rating, setRating}) => {
       stars.push(
         <label
           id={i}
+          key={i}
           className={classSelected}
           onClick={event => rate(event.target.id)}
           onMouseOver={event => star_over(event.target.id)}
