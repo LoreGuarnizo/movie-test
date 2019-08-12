@@ -1,0 +1,18 @@
+.input-text{
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  width: 40%;
+  margin-top: 15px;
+  height: 30px;
+  border-radius: 3px;
+  max-width: 500px;
+  margin: 10px;
+  width: 100%;
+  padding: 0 10px;
+  @media only screen and (max-width: 700px) {
+    width: auto;
+  }
+  &::placeholder {
+    color: gray;
+  }
+}
