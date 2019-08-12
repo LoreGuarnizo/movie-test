@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Run the app locally
 
-## Available Scripts
+In order to run the application in the development mode take the following steps:
 
-In the project directory, you can run:
+> git clone https://github.com/LoreGuarnizo/eventio.git
+<br>
+> npm install
+<br>
+> npm start
 
-### `npm start`
+## Technical Guide
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Overview
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+This is a react application with sass as a preprocessor.  It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Project Structure
 
-### `npm run build`
+CRA (Create React App) was used to setup this project. 
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is modularized with components and services taking care of requests. All components are intended to be totally isolated from each other and rehusable.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Progress
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Feature 1:  Discover
 
-### `npm run eject`
+* In the discovery view, add a search bar at the top to allow users to query
+information about movies.
+* If the search field is empty, show the discovery results
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Feature 2:  Search 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Almost finished. 
+Currently, for mobile size, the list filter style is the same as in desktop size.  So CSS mediaquery changes need to be done in the Events/List folder.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Feature 3:  Filter by rating
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* The rating is a value between 0 and 10.
+* Add a rating filter in the form of five stars like.
+* When selecting a star, all the stars to the left should be selected as well.
 
-## Learn More
+* The range of each star is 2, so, if the first star is selected, only movies
+with rating 0-2 should appear. If the second star is selected, only movies
+with rating 2-4 should appear, and so on.
+* If the star clicked is the currently active, disable the filter.
+* Do this filtering on the client side.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Feature 4:  Detail view
+Not Done :( ... I wanted to spend time on my weekend.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
