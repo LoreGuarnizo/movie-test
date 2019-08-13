@@ -10,7 +10,8 @@ In order to run the application in the development mode take the following steps
 
 ### Overview
 
-This is a react application with sass as a preprocessor.  It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+This is a react application with sass as a preprocessor.  It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+New Hooks features included in React 16.8 are used here.
 
 ### Project Structure
 
