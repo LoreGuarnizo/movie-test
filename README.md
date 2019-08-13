@@ -15,37 +15,6 @@ New Hooks features included in React 16.8 are used here.
 
 ### Project Structure
 
-CRA (Create React App) was used to setup this project. 
-
-This project is modularized with components and services taking care of requests. All components are intended to be totally isolated from each other and rehusable.
-
-### Progress
-
-#### Feature 1:  Discover
-
-* In the discovery view, add a search bar at the top to allow users to query
-information about movies.
-* If the search field is empty, show the discovery results
-
-#### Feature 2:  Search 
-
-Almost finished. 
-Currently, for mobile size, the list filter style is the same as in desktop size.  So CSS mediaquery changes need to be done in the Events/List folder.
-
-#### Feature 3:  Filter by rating
+This project is modularized with components, helpers, and services taking care of requests. All components are intended to be totally isolated from each other and rehusable.
 
 The Rating component was based on an existing one, see it [here](https://codepen.io/benjaminreid/pen/vNVwPW)
-
-* The rating is a value between 0 and 10.
-* Add a rating filter in the form of five stars like.
-* When selecting a star, all the stars to the left should be selected as well.
-
-* The range of each star is 2, so, if the first star is selected, only movies
-with rating 0-2 should appear. If the second star is selected, only movies
-with rating 2-4 should appear, and so on.
-* If the star clicked is the currently active, disable the filter.
-* Do this filtering on the client side.
-
-#### Feature 4:  Detail view
-Upon clicking, a detail view must be shown, displaying more information about the movie.
-
