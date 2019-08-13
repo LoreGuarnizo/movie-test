@@ -2,7 +2,7 @@
 
 In order to run the application in the development mode take the following steps:
 
-1. git clone https://github.com/LoreGuarnizo/eventio.git
+1. git clone https://github.com/LoreGuarnizo/movie-test.git
 2. npm install
 3. npm start
 
