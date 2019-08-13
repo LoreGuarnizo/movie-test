@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './Rating.scss';
 
+/* This Rating component was based on an existing one, see it here: https://codepen.io/benjaminreid/pen/vNVwPW */
+
 const Rating = ({rating, setRating}) => {
   const [tempRating, setTempRating] = useState(0);
 

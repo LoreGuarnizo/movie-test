@@ -1,10 +1,10 @@
 import React from 'react';
-import Search from './components/Search';
+import routes from './routes';
 
 function App() {
   return (
     <div className="app-container">
-      <Search />
+      {routes}
     </div>
   );
 }

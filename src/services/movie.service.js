@@ -11,3 +11,10 @@ export const filterMovies = async query => {
   const moviesToJson = await movies.json();
   return moviesToJson.results;
 }
+
+
+export const getMovieById = async id => {
+  const movie = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`);
+  const movieToJson = await movie.json();
+  return movieToJson;
+}

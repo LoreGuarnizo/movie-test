@@ -12,7 +12,6 @@ In order to run the application in the development mode take the following steps
 
 This is a react application with sass as a preprocessor.  It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
-
 ### Project Structure
 
 CRA (Create React App) was used to setup this project. 
@@ -34,6 +33,8 @@ Currently, for mobile size, the list filter style is the same as in desktop size
 
 #### Feature 3:  Filter by rating
 
+The Rating component was based on an existing one, see it [here](https://codepen.io/benjaminreid/pen/vNVwPW)
+
 * The rating is a value between 0 and 10.
 * Add a rating filter in the form of five stars like.
 * When selecting a star, all the stars to the left should be selected as well.
@@ -45,6 +46,5 @@ with rating 2-4 should appear, and so on.
 * Do this filtering on the client side.
 
 #### Feature 4:  Detail view
-Not Done :( ... I wanted to spend time on my weekend.
-
+Upon clicking, a detail view must be shown, displaying more information about the movie.
 
