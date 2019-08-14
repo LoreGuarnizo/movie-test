@@ -11,10 +11,6 @@ const Search = () => {
   const [query, setQuery] = useState("");
   const [rating, setRating] = useState("");
 
-  const filterMovieByRating = async value => {
-    setRating(value);
-  };
-
   const getMoviesFromAPI = async(query, rating) => {
     let newMovies = [];
     if(query){
@@ -23,7 +19,7 @@ const Search = () => {
       newMovies = await getAllMovies();
     }
     if(rating) {
-      newMovies = newMovies.filter(movie => rating <= movie.vote_average);
+      newMovies = newMovies.filter(movie => movie.vote_average >= (rating - 2)  && movie.vote_average <= rating);
     }
     setMovies(newMovies);
   }
@@ -38,7 +34,7 @@ const Search = () => {
     <div className="search-bar">
       <div className="search-elements">
         <Input query={query} setQuery={setQuery} />
-        <Rating rating={rating} setRating={value => filterMovieByRating(value)} />
+        <Rating rating={rating} setRating={value => setRating(value)} />
       </div>
     </div>
     <MovieList movies={movies} />
