@@ -12,9 +12,6 @@ const Search = () => {
   const [rating, setRating] = useState("");
 
   const filterMovieByRating = async value => {
-    if(rating === value) {
-      setRating(0);
-    }
     setRating(value);
   };
 
