@@ -19,7 +19,7 @@ const Search = () => {
       newMovies = await getAllMovies();
     }
     if(rating) {
-      newMovies = newMovies.filter(movie => movie.vote_average >= (rating - 2)  && movie.vote_average <= rating);
+      newMovies = newMovies.filter(movie => movie.vote_average > (rating - 2) && movie.vote_average <= rating);
     }
     setMovies(newMovies);
   }
